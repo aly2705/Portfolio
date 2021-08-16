@@ -15,6 +15,10 @@
 
   &__img {
     width: 20%;
+
+    @include respond(phone) {
+      width: 50%;
+    }
   }
 
   &__text {
@@ -33,7 +37,7 @@
 .section-skills {
   @extend %section;
   padding: 8rem 5rem;
-  background-image: url("../img/background-dark.svg");
+  background-image: url('../img/background-dark.svg');
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -73,7 +77,7 @@
 .section-contact {
   @extend %section;
   padding: 8rem 5rem;
-  background-image: url("../img/background-dark.svg");
+  background-image: url('../img/background-dark.svg');
   background-size: cover;
   background-repeat: no-repeat;
 

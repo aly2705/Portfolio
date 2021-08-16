@@ -515,6 +515,9 @@ body {
     margin-bottom: 3rem; }
   .section-about__img {
     width: 20%; }
+    @media only screen and (max-width: 37.5em) {
+      .section-about__img {
+        width: 50%; } }
   .section-about__text {
     width: 60%;
     text-align: center; }
