@@ -1,0 +1,28 @@
+.logo {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &__img {
+    height: 5.4rem;
+    margin-right: 1.2rem;
+  }
+
+  &__name {
+    font-size: 2rem;
+
+    &--light {
+      color: $color-white;
+      font-weight: 600;
+    }
+    &--dark {
+      color: $color-secondary-dark;
+      font-weight: 700;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

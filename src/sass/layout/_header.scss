@@ -1,0 +1,68 @@
+.header {
+  background-color: $color-white;
+  padding-bottom: 4rem;
+
+  display: grid;
+  grid-template-rows: 10rem auto;
+  grid-template-columns: 1fr 50vw;
+  grid-template-areas:
+    'nav nav'
+    'head img';
+
+  grid-row-gap: 3rem;
+  grid-column-gap: 5rem;
+
+  @include respond(tab-port) {
+    grid-template-rows: 10rem max-content auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'nav'
+      'img'
+      'head';
+    grid-row-gap: 1.5rem;
+  }
+
+  &__img {
+    grid-area: img;
+    max-width: 80rem;
+    width: 50vw;
+    padding: 0 3rem 3rem 0;
+    justify-self: center;
+    align-self: center;
+
+    @include respond(tab-port) {
+      width: 70vw;
+      padding: 0;
+    }
+  }
+
+  &__text {
+    grid-area: head;
+    padding: 0 0 8rem 8rem;
+    align-self: center;
+
+    @include respond(tab-port) {
+      padding: 6rem;
+      text-align: center;
+    }
+
+    @include respond(phone) {
+      padding: 1rem 4rem;
+    }
+  }
+
+  &__btn {
+    @include respond(tab-port) {
+      margin: 0 auto;
+    }
+  }
+}
+
+// For thank you page, not visible when the one in navigation is already visible
+#header__back-to-home {
+  display: none;
+
+  @include respond(tab-port) {
+    display: initial;
+  }
+}

@@ -1,0 +1,84 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: $color-grey-light-2;
+  background-color: $color-grey-light-1;
+}
+
+.heading-primary {
+  font-size: 5.8rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: $color-grey-dark-2;
+  letter-spacing: -3.5px;
+
+  @include respond(phone) {
+    font-size: 4.8rem;
+    letter-spacing: -3px;
+  }
+}
+
+.heading-secondary {
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: all 0.3s;
+  background-size: 220%;
+
+  &--light {
+    background-image: linear-gradient(
+      to right,
+      $color-white 0%,
+      $color-white 50%,
+      $color-primary 50%
+    );
+  }
+
+  &--dark {
+    background-image: linear-gradient(
+      to right,
+      $color-grey-dark-2 0%,
+      $color-grey-dark-2 50%,
+      lighten($color-secondary, 13%) 50%
+    );
+  }
+
+  &:hover {
+    background-position: 100%;
+  }
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $color-white;
+  transition: all 0.2s;
+
+  &:hover {
+    letter-spacing: 1.5px;
+  }
+}
+
+.paragraph {
+  &--light {
+    color: $color-white;
+    font-weight: 400;
+  }
+
+  &--bigger {
+    font-size: 2rem;
+  }
+}
+
+.copyright {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $color-grey-light-3;
+}

@@ -1,0 +1,130 @@
+.nav {
+  grid-area: nav;
+  padding: 1.5rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  transition: all 0.2s;
+
+  @include respond(phone) {
+    padding: 1.5rem 3rem;
+  }
+
+  &__logo:link,
+  &__logo:visited {
+    text-decoration: none;
+    color: $color-secondary-dark;
+    transition: all 0.2s;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 100%;
+      width: 100vw;
+      height: 100vh;
+      justify-content: center;
+      background-color: rgba($color-grey-light-1, 1);
+    }
+  }
+
+  &__list-btn {
+    display: none;
+
+    @include respond(tab-port) {
+      display: inline-block;
+
+      z-index: 1000;
+      position: absolute;
+      top: 3rem;
+      right: 3.5rem;
+
+      svg {
+        height: 3.5rem;
+        width: 3.5rem;
+        fill: $color-grey-light-2;
+      }
+    }
+  }
+  &__btn-close {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+
+    @include respond(tab-port) {
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 4rem;
+      }
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    display: inline-block;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: $color-grey-light-2;
+    font-weight: 600;
+    transition: all 0.2s;
+
+    @include respond(tab-port) {
+      font-size: 2.8rem;
+    }
+  }
+
+  &__link:hover,
+  &__link:active {
+    transform: translateY(-2px) scale(1.05);
+    color: lighten($color-secondary, 13%);
+  }
+
+  &--sticky {
+    position: fixed;
+    width: 100%;
+    background-color: rgba($color-white, 0.9);
+    z-index: 1000;
+  }
+
+  &__cta {
+    @include respond(tab-port) {
+      font-size: 2.4rem !important;
+    }
+  }
+
+  &__btn {
+    display: none;
+
+    @include respond(tab-port) {
+      display: inline-block;
+      border: none;
+      background-color: transparent;
+      margin-right: 1rem;
+      cursor: pointer;
+
+      svg {
+        height: 3.5rem;
+        width: 3.5rem;
+        fill: $color-secondary-dark;
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
