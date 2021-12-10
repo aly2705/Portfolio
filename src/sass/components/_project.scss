@@ -10,14 +10,14 @@
   position: relative;
   padding-bottom: 3rem;
   box-shadow: 1rem 2.5rem 4rem rgba($color-black, 0.25);
-  transition: all 0.2s;
+  transition: all 0.3s;
 
   & > * {
     margin-bottom: 2rem;
   }
 
   &:hover {
-    transform: translateY(-1rem);
+    transform: translateY(-0.6rem);
     box-shadow: 1.5rem 4rem 5rem rgba($color-black, 0.2);
   }
 
@@ -25,7 +25,8 @@
     background-color: $color-primary;
     padding: 0.8rem 1.5rem;
     border-radius: 1rem;
-    color: $color-white;
+    color: $color-grey-dark-3;
+    font-weight: 600;
     position: absolute;
     top: 2rem;
     left: 3rem;

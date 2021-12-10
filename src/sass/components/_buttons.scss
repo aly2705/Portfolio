@@ -4,44 +4,58 @@
   &:visited {
     display: flex;
     align-items: center;
-
     width: fit-content;
     font-size: inherit;
     font-family: inherit;
     text-decoration: none;
-    color: $color-white;
+    color: $color-grey-dark-3;
     border-radius: 3rem;
     padding: 1.2rem 2.5rem;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.3s;
 
     border: none;
     outline: none;
   }
 
-  &--primary {
+  &--primary,
+  &--primary:link,
+  &--primary:visited {
     background-color: $color-primary;
+    color: $color-grey-dark-3;
+    font-weight: 600;
+
+    svg {
+      fill: $color-grey-dark-3;
+    }
   }
 
-  &--secondary {
+  &--secondary,
+  &--secondary:link,
+  &--secondary:visited {
     background-color: $color-secondary;
+    color: $color-white;
+
+    svg {
+      fill: $color-white;
+    }
   }
 
   svg {
     height: 1.8rem;
     width: 1.8rem;
-    fill: $color-white;
+
     margin-left: 0.75rem;
   }
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    box-shadow: 0 1rem 1.5rem rgba($color-black, 0.15);
   }
 
   &:active,
   &:focus {
     transform: translateY(-1px);
-    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+    box-shadow: 0 0.5rem 0.7rem rgba($color-black, 0.15);
   }
 }
