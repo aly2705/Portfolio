@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+    <meta
+      name="description"
+      content="I am Alexandra Simion, a web developer and designer from Bucharest, Romania. Welcome to my portfolio!"
+    />
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
-    />
+    /> -->
     <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="src/css/style.css" />
+    <script defer src="src/js/modernizr.js"></script>
     <script defer src="src/js/script.js"></script>
     <title>Home | Alexandra Simion</title>
   </head>
@@ -27,7 +32,7 @@
 
         <ul class="nav__list">
           <li class="nav__list-btn nav__comp">
-            <button class="nav__btn-close">
+            <button class="nav__btn-close" aria-label="Close Menu">
               <svg>
                 <use xlink:href="src/img/icons.svg#icon-cross"></use>
               </svg>
@@ -52,7 +57,7 @@
             >
           </li>
         </ul>
-        <button class="nav__btn">
+        <button class="nav__btn" aria-label="Menu">
           <svg>
             <use xlink:href="src/img/icons.svg#icon-menu"></use>
           </svg>
@@ -206,18 +211,25 @@
           <div class="project__label">Design</div>
           <div class="project__img project__img--1"></div>
           <div class="project__title">
-            <h3 class="heading-tertiary">Natours</h3>
+            <h3 class="heading-tertiary">Patoo Thai</h3>
           </div>
           <div class="project__text">
             <p class="paragraph">
-              Built in Jonas Schmedtmann’s course, the project has a fresh
-              design, it’s responsive and it has cool animations and hover
-              effects.
+              The project is a redesign of the original
+              <a
+                class="project__link"
+                href="http://www.patoothai.com/"
+                target="_blank"
+                rel="noopener"
+                >Patoo Thai Website</a
+              >. It is a restaurant website that presents all the important
+              content in a clean, modern format.
             </p>
           </div>
           <a
             target="_blank"
-            href="https://advanced-css-natours-project.netlify.app/"
+            rel="noopener"
+            href="https://patoo-thai.netlify.app/"
             class="btn btn--primary"
             >See the project
             <svg>
@@ -226,39 +238,8 @@
           </a>
           <a
             target="_blank"
-            href="https://github.com/aly2705/CSS-Natours"
-            class="btn btn--secondary"
-            >See the source code
-            <svg>
-              <use xlink:href="src/img/icons.svg#icon-arrow-right2"></use>
-            </svg>
-          </a>
-        </div>
-        <div class="project">
-          <div class="project__label">Design</div>
-          <div class="project__img project__img--2"></div>
-          <div class="project__title">
-            <h3 class="heading-tertiary">Nexter</h3>
-          </div>
-          <div class="project__text">
-            <p class="paragraph">
-              Also built in the Advanced CSS and Sass course, the project
-              explores the possibilities of CSS Grid in creating stunning
-              designs.
-            </p>
-          </div>
-          <a
-            target="_blank"
-            href="https://css-grid-nexter-project.netlify.app/"
-            class="btn btn--primary"
-            >See the project
-            <svg>
-              <use xlink:href="src/img/icons.svg#icon-arrow-right2"></use>
-            </svg>
-          </a>
-          <a
-            target="_blank"
-            href="https://github.com/aly2705/CSS-Nexter"
+            rel="noopener"
+            href="https://github.com/aly2705/Patoo-Thai"
             class="btn btn--secondary"
             >See the source code
             <svg>
@@ -268,7 +249,7 @@
         </div>
         <div class="project">
           <div class="project__label">Web app</div>
-          <div class="project__img project__img--3"></div>
+          <div class="project__img project__img--2"></div>
           <div class="project__title">
             <h3 class="heading-tertiary">Forkify</h3>
           </div>
@@ -281,6 +262,7 @@
           </div>
           <a
             target="_blank"
+            rel="noopener"
             href="https://forkify-aly2705.netlify.app/"
             class="btn btn--primary"
             >See the project
@@ -290,7 +272,42 @@
           </a>
           <a
             target="_blank"
+            rel="noopener"
             href="https://github.com/aly2705/Forkify"
+            class="btn btn--secondary"
+            >See the source code
+            <svg>
+              <use xlink:href="src/img/icons.svg#icon-arrow-right2"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="project">
+          <div class="project__label">Design</div>
+          <div class="project__img project__img--3"></div>
+          <div class="project__title">
+            <h3 class="heading-tertiary">Natours</h3>
+          </div>
+          <div class="project__text">
+            <p class="paragraph">
+              Built in Jonas Schmedtmann’s course, the project has a fresh
+              design, it’s responsive and it has cool animations and hover
+              effects.
+            </p>
+          </div>
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://advanced-css-natours-project.netlify.app/"
+            class="btn btn--primary"
+            >See the project
+            <svg>
+              <use xlink:href="src/img/icons.svg#icon-arrow-right2"></use>
+            </svg>
+          </a>
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://github.com/aly2705/CSS-Natours"
             class="btn btn--secondary"
             >See the source code
             <svg>
@@ -313,6 +330,7 @@
           </div>
           <a
             target="_blank"
+            rel="noopener"
             href="https://aly2705.github.io/Trivia-War/"
             class="btn btn--primary"
             >See the project
@@ -322,6 +340,7 @@
           </a>
           <a
             target="_blank"
+            rel="noopener"
             href="https://github.com/aly2705/Trivia-War"
             class="btn btn--secondary"
             >See the source code
@@ -408,7 +427,9 @@
         <a
           href="https://www.instagram.com/aly.simion27/"
           target="_blank"
+          rel="noopener"
           class="footer__link"
+          aria-label="Instagram Link"
         >
           <svg class="footer__icon">
             <use xlink:href="src/img/icons.svg#icon-instagram"></use>
@@ -417,7 +438,9 @@
         <a
           href="https://github.com/aly2705"
           target="_blank"
+          rel="noopener"
           class="footer__link"
+          aria-label="Github Link"
         >
           <svg class="footer__icon">
             <use xlink:href="src/img/icons.svg#icon-github"></use></svg
@@ -425,7 +448,9 @@
         <a
           href="https://www.linkedin.com/in/alexandra-simion-05b42b21a/"
           target="_blank"
+          rel="noopener"
           class="footer__link"
+          aria-label="LinkedIn Link"
         >
           <svg class="footer__icon">
             <use xlink:href="src/img/icons.svg#icon-linkedin"></use>

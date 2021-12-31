@@ -49,42 +49,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    &--1 {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba($color-secondary, 0.6),
-          rgba($color-secondary-dark, 0.6)
-        ),
-        url(../img/natours.png);
-    }
-
-    &--2 {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba($color-secondary, 0.6),
-          rgba($color-secondary-dark, 0.6)
-        ),
-        url(../img/nexter.png);
-    }
-
-    &--3 {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba($color-secondary, 0.6),
-          rgba($color-secondary-dark, 0.6)
-        ),
-        url(../img/forkify.png);
-    }
-
-    &--4 {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba($color-secondary, 0.6),
-          rgba($color-secondary-dark, 0.6)
-        ),
-        url(../img/trivia.png);
-    }
   }
 
   &__title {
@@ -108,6 +72,161 @@
 
     @include respond(phone) {
       padding: 0 2.5rem;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: $color-secondary;
+    font-weight: 600;
+  }
+}
+
+.no-webp .project__img {
+  &--1 {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary, 0.6),
+        rgba($color-secondary-dark, 0.6)
+      ),
+      url(../img/patoo-small.jpg);
+
+    @media (min-resolution: 192dpi) and (min-width: 37.5em) {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-secondary, 0.6),
+          rgba($color-secondary-dark, 0.6)
+        ),
+        url(../img/patoo.jpg);
+    }
+  }
+
+  &--2 {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary, 0.6),
+        rgba($color-secondary-dark, 0.6)
+      ),
+      url(../img/forkify-small.jpg);
+
+    @media (min-resolution: 192dpi) and (min-width: 37.5em) {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-secondary, 0.6),
+          rgba($color-secondary-dark, 0.6)
+        ),
+        url(../img/forkify.jpg);
+    }
+  }
+
+  &--3 {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary, 0.6),
+        rgba($color-secondary-dark, 0.6)
+      ),
+      url(../img/natours-small.jpg);
+
+    @media (min-resolution: 192dpi) and (min-width: 37.5em) {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-secondary, 0.6),
+          rgba($color-secondary-dark, 0.6)
+        ),
+        url(../img/natours.jpg);
+    }
+  }
+
+  &--4 {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary, 0.6),
+        rgba($color-secondary-dark, 0.6)
+      ),
+      url(../img/trivia-small.jpg);
+
+    @media (min-resolution: 192dpi) and (min-width: 37.5em) {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-secondary, 0.6),
+          rgba($color-secondary-dark, 0.6)
+        ),
+        url(../img/trivia.jpg);
+    }
+  }
+}
+
+.webp .project__img {
+  &--1 {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary, 0.6),
+        rgba($color-secondary-dark, 0.6)
+      ),
+      url(../img/patoo-small.webp);
+
+    @media (min-resolution: 192dpi) and (min-width: 37.5em) {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-secondary, 0.6),
+          rgba($color-secondary-dark, 0.6)
+        ),
+        url(../img/patoo.webp);
+    }
+  }
+
+  &--2 {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary, 0.6),
+        rgba($color-secondary-dark, 0.6)
+      ),
+      url(../img/forkify-small.webp);
+
+    @media (min-resolution: 192dpi) and (min-width: 37.5em) {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-secondary, 0.6),
+          rgba($color-secondary-dark, 0.6)
+        ),
+        url(../img/forkify.webp);
+    }
+  }
+
+  &--3 {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary, 0.6),
+        rgba($color-secondary-dark, 0.6)
+      ),
+      url(../img/natours-small.webp);
+
+    @media (min-resolution: 192dpi) and (min-width: 37.5em) {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-secondary, 0.6),
+          rgba($color-secondary-dark, 0.6)
+        ),
+        url(../img/natours.webp);
+    }
+  }
+
+  &--4 {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary, 0.6),
+        rgba($color-secondary-dark, 0.6)
+      ),
+      url(../img/trivia-small.webp);
+
+    @media (min-resolution: 192dpi) and (min-width: 37.5em) {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-secondary, 0.6),
+          rgba($color-secondary-dark, 0.6)
+        ),
+        url(../img/trivia.webp);
     }
   }
 }
