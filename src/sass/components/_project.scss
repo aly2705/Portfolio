@@ -90,7 +90,7 @@
         rgba($color-secondary, 0.6),
         rgba($color-secondary-dark, 0.6)
       ),
-      url(../img/patoo-small.jpg);
+      url(../img/moren-small.jpg);
 
     @media (min-resolution: 192dpi) and (min-width: 37.5em) {
       background-image: linear-gradient(
@@ -98,7 +98,7 @@
           rgba($color-secondary, 0.6),
           rgba($color-secondary-dark, 0.6)
         ),
-        url(../img/patoo.jpg);
+        url(../img/moren.jpg);
     }
   }
 
@@ -126,6 +126,24 @@
         rgba($color-secondary, 0.6),
         rgba($color-secondary-dark, 0.6)
       ),
+      url(../img/patoo-small.jpg);
+
+    @media (min-resolution: 192dpi) and (min-width: 37.5em) {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-secondary, 0.6),
+          rgba($color-secondary-dark, 0.6)
+        ),
+        url(../img/patoo.jpg);
+    }
+  }
+
+  &--4 {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary, 0.6),
+        rgba($color-secondary-dark, 0.6)
+      ),
       url(../img/natours-small.jpg);
 
     @media (min-resolution: 192dpi) and (min-width: 37.5em) {
@@ -137,24 +155,6 @@
         url(../img/natours.jpg);
     }
   }
-
-  &--4 {
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-secondary, 0.6),
-        rgba($color-secondary-dark, 0.6)
-      ),
-      url(../img/trivia-small.jpg);
-
-    @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba($color-secondary, 0.6),
-          rgba($color-secondary-dark, 0.6)
-        ),
-        url(../img/trivia.jpg);
-    }
-  }
 }
 
 .webp .project__img {
@@ -164,7 +164,7 @@
         rgba($color-secondary, 0.6),
         rgba($color-secondary-dark, 0.6)
       ),
-      url(../img/patoo-small.webp);
+      url(../img/moren-small.webp);
 
     @media (min-resolution: 192dpi) and (min-width: 37.5em) {
       background-image: linear-gradient(
@@ -172,10 +172,9 @@
           rgba($color-secondary, 0.6),
           rgba($color-secondary-dark, 0.6)
         ),
-        url(../img/patoo.webp);
+        url(../img/moren.webp);
     }
   }
-
   &--2 {
     background-image: linear-gradient(
         to right bottom,
@@ -193,8 +192,25 @@
         url(../img/forkify.webp);
     }
   }
-
   &--3 {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary, 0.6),
+        rgba($color-secondary-dark, 0.6)
+      ),
+      url(../img/patoo-small.webp);
+
+    @media (min-resolution: 192dpi) and (min-width: 37.5em) {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-secondary, 0.6),
+          rgba($color-secondary-dark, 0.6)
+        ),
+        url(../img/patoo.webp);
+    }
+  }
+
+  &--4 {
     background-image: linear-gradient(
         to right bottom,
         rgba($color-secondary, 0.6),
@@ -209,24 +225,6 @@
           rgba($color-secondary-dark, 0.6)
         ),
         url(../img/natours.webp);
-    }
-  }
-
-  &--4 {
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-secondary, 0.6),
-        rgba($color-secondary-dark, 0.6)
-      ),
-      url(../img/trivia-small.webp);
-
-    @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba($color-secondary, 0.6),
-          rgba($color-secondary-dark, 0.6)
-        ),
-        url(../img/trivia.webp);
     }
   }
 }

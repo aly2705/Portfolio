@@ -58,6 +58,10 @@
     margin-bottom: 6rem;
   }
 
+  @include respond(phone) {
+    padding: 8rem 4rem;
+  }
+
   &__container {
     width: 80%;
     display: grid;
@@ -68,7 +72,7 @@
     justify-items: center;
 
     @include respond(phone) {
-      grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
       width: 100%;
     }
   }
@@ -84,6 +88,11 @@
   & > *:not(:last-child) {
     margin-bottom: 3rem;
   }
+
+  @include respond(phone) {
+    padding: 8rem 3rem;
+  }
+
   &__text {
     width: 60%;
     text-align: center;
