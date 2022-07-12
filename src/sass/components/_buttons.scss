@@ -12,7 +12,10 @@
     border-radius: 3rem;
     padding: 1.2rem 2.5rem;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 
     border: none;
     outline: none;
@@ -28,6 +31,13 @@
     svg {
       fill: $color-grey-dark-3;
     }
+
+    &:after {
+      background-color: $color-primary;
+    }
+    &:before {
+      background-color: darken($color-primary, 10%);
+    }
   }
 
   &--secondary,
@@ -38,6 +48,13 @@
 
     svg {
       fill: $color-white;
+    }
+
+    &:after {
+      background-color: $color-secondary;
+    }
+    &:before {
+      background-color: darken($color-secondary, 10%);
     }
   }
 
@@ -50,18 +67,52 @@
   svg {
     height: 1.8rem;
     width: 1.8rem;
-
+    transition: all 0.5s;
     margin-left: 0.75rem;
   }
 
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 1rem 1.5rem rgba($color-black, 0.15);
-  }
+  // &:hover {
+  //   transform: translateY(-2px);
+  //   box-shadow: 0 1rem 1.5rem rgba($color-black, 0.15);
+  // }
 
-  &:active,
-  &:focus {
-    transform: translateY(-1px);
-    box-shadow: 0 0.5rem 0.7rem rgba($color-black, 0.15);
+  // &:active,
+  // &:focus {
+  //   transform: translateY(-1px);
+  //   box-shadow: 0 0.5rem 0.7rem rgba($color-black, 0.15);
+  // }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10rem;
+    z-index: -2;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+  &:hover {
+    color: $color-white;
+    &:before {
+      width: 100%;
+    }
+
+    svg {
+      fill: $color-white;
+    }
   }
 }
