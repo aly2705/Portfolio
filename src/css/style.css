@@ -131,7 +131,8 @@ body {
         width: 100vw;
         height: 100vh;
         justify-content: center;
-        background-color: #f0f1f6; } }
+        background-color: #f0f1f6;
+        z-index: 10; } }
   .nav__list-btn {
     display: none; }
     @media only screen and (max-width: 56.25em) {
@@ -401,7 +402,7 @@ body {
     font-weight: 600;
     color: #f0f1f6; }
 
-.project {
+.card {
   max-width: 45rem;
   display: flex;
   flex-direction: column;
@@ -414,12 +415,12 @@ body {
   padding-bottom: 3rem;
   box-shadow: 1rem 2.5rem 4rem rgba(0, 0, 0, 0.25);
   transition: all 0.3s; }
-  .project > * {
+  .card > * {
     margin-bottom: 2rem; }
-  .project:hover {
+  .card:hover {
     transform: translateY(-0.6rem);
     box-shadow: 1.5rem 4rem 5rem rgba(0, 0, 0, 0.2); }
-  .project__label {
+  .card__label {
     background-color: #2acfcf;
     padding: 0.8rem 1.5rem;
     border-radius: 1rem;
@@ -431,18 +432,18 @@ body {
     text-transform: capitalize;
     transition: all 0.2s; }
     @media only screen and (max-width: 37.5em) {
-      .project__label {
+      .card__label {
         top: 1.5rem;
         left: 1.5rem; } }
-    .project__label:hover {
+    .card__label:hover {
       transform: scale(1.05); }
-  .project__img {
+  .card__img {
     height: 25rem;
     width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
-  .project__title {
+  .card__title {
     width: 60%;
     text-align: center;
     background-color: #4b3f6b;
@@ -451,67 +452,155 @@ body {
     margin-bottom: -2.5rem;
     transform: translateY(-5.5rem); }
     @media only screen and (max-width: 37.5em) {
-      .project__title {
+      .card__title {
         width: 70%; } }
-  .project__text {
+  .card__text {
     text-align: center;
     padding: 0 4.5rem;
     flex: 1; }
     @media only screen and (max-width: 37.5em) {
-      .project__text {
+      .card__text {
         padding: 0 2.5rem; } }
-  .project__link:link, .project__link:visited {
+  .card__link:link, .card__link:visited {
     text-decoration: none;
     color: #4b3f6b;
     font-weight: 600; }
 
-.no-webp .project__img--1 {
+.no-webp .card__img--1 {
   background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/moren-small.jpg); }
   @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-    .no-webp .project__img--1 {
+    .no-webp .card__img--1 {
       background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/moren.jpg); } }
 
-.no-webp .project__img--2 {
+.no-webp .card__img--2 {
   background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/forkify-small.jpg); }
   @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-    .no-webp .project__img--2 {
+    .no-webp .card__img--2 {
       background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/forkify.jpg); } }
 
-.no-webp .project__img--3 {
+.no-webp .card__img--3 {
   background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/patoo-small.jpg); }
   @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-    .no-webp .project__img--3 {
+    .no-webp .card__img--3 {
       background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/patoo.jpg); } }
 
-.no-webp .project__img--4 {
+.no-webp .card__img--4 {
   background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/natours-small.jpg); }
   @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-    .no-webp .project__img--4 {
+    .no-webp .card__img--4 {
       background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/natours.jpg); } }
 
-.webp .project__img--1 {
+.webp .card__img--1 {
   background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/moren-small.webp); }
   @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-    .webp .project__img--1 {
+    .webp .card__img--1 {
       background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/moren.webp); } }
 
-.webp .project__img--2 {
+.webp .card__img--2 {
   background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/forkify-small.webp); }
   @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-    .webp .project__img--2 {
+    .webp .card__img--2 {
       background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/forkify.webp); } }
 
-.webp .project__img--3 {
+.webp .card__img--3 {
   background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/patoo-small.webp); }
   @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-    .webp .project__img--3 {
+    .webp .card__img--3 {
       background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/patoo.webp); } }
 
-.webp .project__img--4 {
+.webp .card__img--4 {
   background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/natours-small.webp); }
   @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-    .webp .project__img--4 {
+    .webp .card__img--4 {
       background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/natours.webp); } }
+
+.project {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 5.5rem;
+  padding-left: 3rem; }
+  @media only screen and (max-width: 75em) {
+    .project {
+      padding: 3.5rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .project {
+      flex-direction: column;
+      padding: 3.5rem 5.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .project {
+      padding: 2.5rem 2.5rem; } }
+  .project__img {
+    width: 50%;
+    display: block; }
+    @media only screen and (max-width: 75em) {
+      .project__img {
+        width: 40%; } }
+    @media only screen and (max-width: 56.25em) {
+      .project__img {
+        width: 70%; } }
+    @media only screen and (max-width: 37.5em) {
+      .project__img {
+        width: 100%; } }
+  .project__description {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-right: 3rem; }
+    @media only screen and (max-width: 75em) {
+      .project__description {
+        gap: 1.5rem;
+        margin-right: 1rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .project__description {
+        align-items: center;
+        text-align: center; } }
+  .project__title {
+    font-size: 3rem;
+    color: #35323e; }
+  .project__buttons {
+    display: flex;
+    column-gap: 2rem;
+    margin-bottom: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .project__buttons {
+        flex-direction: column;
+        row-gap: 1.2rem;
+        align-items: center; } }
+  .project__labels {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+    column-gap: 1.3rem;
+    row-gap: 0.8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .project__labels {
+        justify-content: center; } }
+    @media only screen and (max-width: 37.5em) {
+      .project__labels {
+        column-gap: 1rem;
+        row-gap: 0.8rem; } }
+  .project__label {
+    background-color: #f0f1f6;
+    padding: 0.8rem 1.5rem;
+    border-radius: 1rem;
+    color: #322b2b;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: all 0.2s;
+    width: fit-content;
+    font-size: 1.4rem; }
+    @media only screen and (max-width: 37.5em) {
+      .project__label {
+        font-size: 1.2rem; } }
+  .project__link:link, .project__link:visited {
+    text-decoration: none;
+    color: #4b3f6b;
+    font-weight: 600; }
 
 .contact {
   display: grid;
@@ -638,17 +727,6 @@ body {
   @media only screen and (max-width: 37.5em) {
     .section-projects {
       padding: 8rem 4rem; } }
-  .section-projects__container {
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
-    grid-column-gap: 6rem;
-    grid-row-gap: 10rem;
-    justify-items: center; }
-    @media only screen and (max-width: 37.5em) {
-      .section-projects__container {
-        grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
-        width: 100%; } }
 
 .section-contact {
   padding: 8rem 5rem;
