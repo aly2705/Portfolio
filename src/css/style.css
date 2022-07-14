@@ -518,6 +518,8 @@ body {
   background-color: #fff;
   display: flex;
   align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   border-radius: 1rem;
   padding: 5.5rem;
   padding-left: 3rem; }
@@ -526,11 +528,23 @@ body {
       padding: 3.5rem; } }
   @media only screen and (max-width: 56.25em) {
     .project {
-      flex-direction: column;
+      grid-template-columns: 1fr;
+      justify-items: center;
       padding: 3.5rem 5.5rem; } }
   @media only screen and (max-width: 37.5em) {
     .project {
       padding: 2.5rem 2.5rem; } }
+  .project__picture {
+    display: block; }
+    @media only screen and (max-width: 75em) {
+      .project__picture {
+        width: 95%; } }
+    @media only screen and (max-width: 56.25em) {
+      .project__picture {
+        width: 70%; } }
+    @media only screen and (max-width: 37.5em) {
+      .project__picture {
+        width: 100%; } }
   .project__img {
     width: 50%;
     display: block; }

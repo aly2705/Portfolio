@@ -1,238 +1,11 @@
-.card {
-  max-width: 45rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  background-color: $color-white;
-  border-radius: 1rem;
-  overflow: hidden;
-  position: relative;
-  padding-bottom: 3rem;
-  box-shadow: 1rem 2.5rem 4rem rgba($color-black, 0.25);
-  transition: all 0.3s;
-
-  & > * {
-    margin-bottom: 2rem;
-  }
-
-  &:hover {
-    transform: translateY(-0.6rem);
-    box-shadow: 1.5rem 4rem 5rem rgba($color-black, 0.2);
-  }
-
-  &__label {
-    background-color: $color-primary;
-    padding: 0.8rem 1.5rem;
-    border-radius: 1rem;
-    color: $color-grey-dark-3;
-    font-weight: 600;
-    position: absolute;
-    top: 2rem;
-    left: 3rem;
-    text-transform: capitalize;
-    transition: all 0.2s;
-
-    @include respond(phone) {
-      top: 1.5rem;
-      left: 1.5rem;
-    }
-
-    &:hover {
-      transform: scale(1.05);
-    }
-  }
-
-  &__img {
-    height: 25rem;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  &__title {
-    width: 60%;
-    text-align: center;
-    background-color: $color-secondary;
-    border-radius: 1rem;
-    padding: 1.5rem 3rem;
-    margin-bottom: -2.5rem;
-    transform: translateY(-5.5rem);
-
-    @include respond(phone) {
-      width: 70%;
-    }
-  }
-
-  &__text {
-    text-align: center;
-    padding: 0 4.5rem;
-    flex: 1;
-
-    @include respond(phone) {
-      padding: 0 2.5rem;
-    }
-  }
-
-  &__link:link,
-  &__link:visited {
-    text-decoration: none;
-    color: $color-secondary;
-    font-weight: 600;
-  }
-}
-
-.no-webp .card__img {
-  &--1 {
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-secondary, 0.6),
-        rgba($color-secondary-dark, 0.6)
-      ),
-      url(../img/moren-small.jpg);
-
-    @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba($color-secondary, 0.6),
-          rgba($color-secondary-dark, 0.6)
-        ),
-        url(../img/moren.jpg);
-    }
-  }
-
-  &--2 {
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-secondary, 0.6),
-        rgba($color-secondary-dark, 0.6)
-      ),
-      url(../img/forkify-small.jpg);
-
-    @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba($color-secondary, 0.6),
-          rgba($color-secondary-dark, 0.6)
-        ),
-        url(../img/forkify.jpg);
-    }
-  }
-
-  &--3 {
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-secondary, 0.6),
-        rgba($color-secondary-dark, 0.6)
-      ),
-      url(../img/patoo-small.jpg);
-
-    @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba($color-secondary, 0.6),
-          rgba($color-secondary-dark, 0.6)
-        ),
-        url(../img/patoo.jpg);
-    }
-  }
-
-  &--4 {
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-secondary, 0.6),
-        rgba($color-secondary-dark, 0.6)
-      ),
-      url(../img/natours-small.jpg);
-
-    @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba($color-secondary, 0.6),
-          rgba($color-secondary-dark, 0.6)
-        ),
-        url(../img/natours.jpg);
-    }
-  }
-}
-
-.webp .card__img {
-  &--1 {
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-secondary, 0.6),
-        rgba($color-secondary-dark, 0.6)
-      ),
-      url(../img/moren-small.webp);
-
-    @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba($color-secondary, 0.6),
-          rgba($color-secondary-dark, 0.6)
-        ),
-        url(../img/moren.webp);
-    }
-  }
-  &--2 {
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-secondary, 0.6),
-        rgba($color-secondary-dark, 0.6)
-      ),
-      url(../img/forkify-small.webp);
-
-    @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba($color-secondary, 0.6),
-          rgba($color-secondary-dark, 0.6)
-        ),
-        url(../img/forkify.webp);
-    }
-  }
-  &--3 {
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-secondary, 0.6),
-        rgba($color-secondary-dark, 0.6)
-      ),
-      url(../img/patoo-small.webp);
-
-    @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba($color-secondary, 0.6),
-          rgba($color-secondary-dark, 0.6)
-        ),
-        url(../img/patoo.webp);
-    }
-  }
-
-  &--4 {
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-secondary, 0.6),
-        rgba($color-secondary-dark, 0.6)
-      ),
-      url(../img/natours-small.webp);
-
-    @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba($color-secondary, 0.6),
-          rgba($color-secondary-dark, 0.6)
-        ),
-        url(../img/natours.webp);
-    }
-  }
-}
-
 .project {
   background-color: $color-white;
   display: flex;
   align-items: center;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
   border-radius: 1rem;
   padding: 5.5rem;
   padding-left: 3rem;
@@ -242,19 +15,19 @@
   }
 
   @include respond(tab-port) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    justify-items: center;
     padding: 3.5rem 5.5rem;
   }
   @include respond(phone) {
     padding: 2.5rem 2.5rem;
   }
 
-  &__img {
-    width: 50%;
+  &__picture {
     display: block;
 
     @include respond(tab-land) {
-      width: 40%;
+      width: 95%;
     }
 
     @include respond(tab-port) {
