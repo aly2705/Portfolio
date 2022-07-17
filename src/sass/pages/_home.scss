@@ -13,25 +13,80 @@
     margin-bottom: 3rem;
   }
 
-  &__img {
-    width: 20%;
+  &__content {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    padding: 2rem;
+    column-gap: 5rem;
+    justify-items: center;
+    align-items: center;
 
-    @include respond(phone) {
-      width: 50%;
+    @include respond(tab-land) {
+      grid-template-columns: 0.7fr 1.3fr;
+      column-gap: 4rem;
+      padding: 2rem 0;
+    }
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      row-gap: 4rem;
     }
   }
+  &__img {
+    width: 100%;
+    display: block;
 
-  &__text {
-    width: 60%;
-    text-align: center;
+    @include respond(tab-port) {
+      width: 50%;
+    }
+    @include respond(phone) {
+      width: 80%;
+    }
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 0 2rem;
 
     @include respond(tab-port) {
       width: 80%;
+      padding: 0 3rem;
+      margin-top: 2rem;
+      text-align: center;
     }
     @include respond(phone) {
-      width: 90%;
+      width: 100%;
+      padding: 0;
     }
   }
+  &__btn {
+    margin-top: 1rem;
+
+    @include respond(tab-port) {
+      align-self: center;
+    }
+  }
+
+  // &__img {
+  //   width: 20%;
+
+  //   @include respond(phone) {
+  //     width: 50%;
+  //   }
+  // }
+
+  // &__text {
+  //   width: 60%;
+  //   text-align: center;
+
+  //   @include respond(tab-port) {
+  //     width: 80%;
+  //   }
+  //   @include respond(phone) {
+  //     width: 90%;
+  //   }
+  // }
 }
 
 .section-skills {
@@ -61,21 +116,6 @@
   @include respond(phone) {
     padding: 8rem 4rem;
   }
-
-  // &__container {
-  //   width: 80%;
-  //   display: grid;
-  //   grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
-  //   grid-column-gap: 6rem;
-  //   grid-row-gap: 10rem;
-
-  //   justify-items: center;
-
-  //   @include respond(phone) {
-  //     grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
-  //     width: 100%;
-  //   }
-  // }
 }
 
 .section-contact {

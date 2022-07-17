@@ -402,118 +402,6 @@ body {
     font-weight: 600;
     color: #f0f1f6; }
 
-.card {
-  max-width: 45rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #fff;
-  border-radius: 1rem;
-  overflow: hidden;
-  position: relative;
-  padding-bottom: 3rem;
-  box-shadow: 1rem 2.5rem 4rem rgba(0, 0, 0, 0.25);
-  transition: all 0.3s; }
-  .card > * {
-    margin-bottom: 2rem; }
-  .card:hover {
-    transform: translateY(-0.6rem);
-    box-shadow: 1.5rem 4rem 5rem rgba(0, 0, 0, 0.2); }
-  .card__label {
-    background-color: #2acfcf;
-    padding: 0.8rem 1.5rem;
-    border-radius: 1rem;
-    color: #322b2b;
-    font-weight: 600;
-    position: absolute;
-    top: 2rem;
-    left: 3rem;
-    text-transform: capitalize;
-    transition: all 0.2s; }
-    @media only screen and (max-width: 37.5em) {
-      .card__label {
-        top: 1.5rem;
-        left: 1.5rem; } }
-    .card__label:hover {
-      transform: scale(1.05); }
-  .card__img {
-    height: 25rem;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; }
-  .card__title {
-    width: 60%;
-    text-align: center;
-    background-color: #4b3f6b;
-    border-radius: 1rem;
-    padding: 1.5rem 3rem;
-    margin-bottom: -2.5rem;
-    transform: translateY(-5.5rem); }
-    @media only screen and (max-width: 37.5em) {
-      .card__title {
-        width: 70%; } }
-  .card__text {
-    text-align: center;
-    padding: 0 4.5rem;
-    flex: 1; }
-    @media only screen and (max-width: 37.5em) {
-      .card__text {
-        padding: 0 2.5rem; } }
-  .card__link:link, .card__link:visited {
-    text-decoration: none;
-    color: #4b3f6b;
-    font-weight: 600; }
-
-.no-webp .card__img--1 {
-  background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/moren-small.jpg); }
-  @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-    .no-webp .card__img--1 {
-      background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/moren.jpg); } }
-
-.no-webp .card__img--2 {
-  background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/forkify-small.jpg); }
-  @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-    .no-webp .card__img--2 {
-      background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/forkify.jpg); } }
-
-.no-webp .card__img--3 {
-  background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/patoo-small.jpg); }
-  @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-    .no-webp .card__img--3 {
-      background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/patoo.jpg); } }
-
-.no-webp .card__img--4 {
-  background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/natours-small.jpg); }
-  @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-    .no-webp .card__img--4 {
-      background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/natours.jpg); } }
-
-.webp .card__img--1 {
-  background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/moren-small.webp); }
-  @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-    .webp .card__img--1 {
-      background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/moren.webp); } }
-
-.webp .card__img--2 {
-  background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/forkify-small.webp); }
-  @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-    .webp .card__img--2 {
-      background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/forkify.webp); } }
-
-.webp .card__img--3 {
-  background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/patoo-small.webp); }
-  @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-    .webp .card__img--3 {
-      background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/patoo.webp); } }
-
-.webp .card__img--4 {
-  background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/natours-small.webp); }
-  @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-    .webp .card__img--4 {
-      background-image: linear-gradient(to right bottom, rgba(75, 63, 107, 0.6), rgba(59, 48, 84, 0.6)), url(../img/natours.webp); } }
-
 .project {
   background-color: #fff;
   display: flex;
@@ -544,18 +432,6 @@ body {
         width: 70%; } }
     @media only screen and (max-width: 37.5em) {
       .project__picture {
-        width: 100%; } }
-  .project__img {
-    width: 50%;
-    display: block; }
-    @media only screen and (max-width: 75em) {
-      .project__img {
-        width: 40%; } }
-    @media only screen and (max-width: 56.25em) {
-      .project__img {
-        width: 70%; } }
-    @media only screen and (max-width: 37.5em) {
-      .project__img {
         width: 100%; } }
   .project__description {
     display: flex;
@@ -708,20 +584,51 @@ body {
   padding-bottom: 8rem; }
   .section-about > *:not(:last-child) {
     margin-bottom: 3rem; }
+  .section-about__content {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    padding: 2rem;
+    column-gap: 5rem;
+    justify-items: center;
+    align-items: center; }
+    @media only screen and (max-width: 75em) {
+      .section-about__content {
+        grid-template-columns: 0.7fr 1.3fr;
+        column-gap: 4rem;
+        padding: 2rem 0; } }
+    @media only screen and (max-width: 56.25em) {
+      .section-about__content {
+        grid-template-columns: 1fr;
+        row-gap: 4rem; } }
   .section-about__img {
-    width: 20%; }
-    @media only screen and (max-width: 37.5em) {
+    width: 100%;
+    display: block; }
+    @media only screen and (max-width: 56.25em) {
       .section-about__img {
         width: 50%; } }
-  .section-about__text {
-    width: 60%;
-    text-align: center; }
-    @media only screen and (max-width: 56.25em) {
-      .section-about__text {
-        width: 80%; } }
     @media only screen and (max-width: 37.5em) {
-      .section-about__text {
-        width: 90%; } }
+      .section-about__img {
+        width: 80%; } }
+  .section-about__description {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 0 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .section-about__description {
+        width: 80%;
+        padding: 0 3rem;
+        margin-top: 2rem;
+        text-align: center; } }
+    @media only screen and (max-width: 37.5em) {
+      .section-about__description {
+        width: 100%;
+        padding: 0; } }
+  .section-about__btn {
+    margin-top: 1rem; }
+    @media only screen and (max-width: 56.25em) {
+      .section-about__btn {
+        align-self: center; } }
 
 .section-skills {
   padding: 8rem 5rem;
