@@ -134,6 +134,22 @@
         <div class="toolbox__tool">
           <div class="toolbox__tool-logo">
             <svg>
+              <use xlink:href="src/img/icons.svg#icon-react"></use>
+            </svg>
+          </div>
+          <div class="toolbox__tool-name">React.js</div>
+        </div>
+        <div class="toolbox__tool">
+          <div class="toolbox__tool-logo">
+            <svg>
+              <use xlink:href="src/img/icons.svg#icon-javascript"></use>
+            </svg>
+          </div>
+          <div class="toolbox__tool-name">JavaScript</div>
+        </div>
+        <div class="toolbox__tool">
+          <div class="toolbox__tool-logo">
+            <svg>
               <use xlink:href="src/img/icons.svg#icon-html5"></use>
             </svg>
           </div>
@@ -147,17 +163,17 @@
           </div>
           <div class="toolbox__tool-name">CSS</div>
         </div>
-        <div class="toolbox__tool">
-          <div class="toolbox__tool-logo">
-            <svg>
-              <use xlink:href="src/img/icons.svg#icon-javascript"></use>
-            </svg>
-          </div>
-          <div class="toolbox__tool-name">JavaScript</div>
-        </div>
       </div>
       <h3 class="heading-tertiary">Tools</h3>
       <div class="toolbox">
+        <div class="toolbox__tool">
+          <div class="toolbox__tool-logo">
+            <svg>
+              <use xlink:href="src/img/icons.svg#icon-redux"></use>
+            </svg>
+          </div>
+          <div class="toolbox__tool-name">Redux</div>
+        </div>
         <div class="toolbox__tool">
           <div class="toolbox__tool-logo">
             <svg>
@@ -174,14 +190,7 @@
           </div>
           <div class="toolbox__tool-name">npm</div>
         </div>
-        <div class="toolbox__tool">
-          <div class="toolbox__tool-logo">
-            <svg>
-              <use xlink:href="src/img/icons.svg#icon-dropbox"></use>
-            </svg>
-          </div>
-          <div class="toolbox__tool-name">Parcel</div>
-        </div>
+
         <div class="toolbox__tool">
           <div class="toolbox__tool-logo">
             <svg>
@@ -218,6 +227,63 @@
     </section>
     <section class="section-projects" id="section-projects">
       <h2 class="heading-secondary heading-secondary--dark">My projects</h2>
+
+      <div class="project">
+        <picture class="project__picture">
+          <source
+            type="image/webp"
+            srcset="src/img/mockups/pomodo-mockup.webp"
+          />
+          <source
+            type="image/jpeg"
+            srcset="src/img/mockups/pomodo-mockup.jpg"
+          />
+          <img
+            width="100%"
+            src="src/img/mockups/pomodo-mockup.jpg"
+            alt="Moren Mockup"
+          />
+        </picture>
+
+        <div class="project__description">
+          <h3 class="heading-tertiary project__title">pomoDo</h3>
+          <ul class="project__labels">
+            <li class="project__label">PWA</li>
+            <li class="project__label">React</li>
+            <li class="project__label">Redux</li>
+            <li class="project__label">React Router</li>
+            <li class="project__label">CSS & SASS</li>
+          </ul>
+          <p class="paragraph">
+            Installable web app, built in React that aims to help users increase
+            their productivity by tracking active time, tasks and progress.
+            Accessible from every device!
+          </p>
+          <div class="project__buttons">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://pomodo.alexandrasimion.com"
+              class="btn btn--primary"
+              >Demo App
+              <svg>
+                <use xlink:href="src/img/icons.svg#icon-arrow-right2"></use>
+              </svg>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://github.com/aly2705/pomoDo"
+              class="btn btn--secondary"
+              >Source Code
+              <svg>
+                <use xlink:href="src/img/icons.svg#icon-arrow-right2"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div class="project">
         <picture class="project__picture">
           <source
@@ -307,7 +373,7 @@
             <a
               target="_blank"
               rel="noopener"
-              href="https://forkify-aly2705.netlify.app/"
+              href="https://forkify.alexandrasimion.com"
               class="btn btn--primary"
               >Demo App
               <svg>
@@ -367,7 +433,7 @@
             <a
               target="_blank"
               rel="noopener"
-              href="https://patoo-thai.netlify.app/"
+              href="https://patoothai.alexandrasimion.com"
               class="btn btn--primary"
               >Website
               <svg>
